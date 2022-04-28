@@ -579,7 +579,7 @@ height: 44px;
   background-position: center;
   }
   /* другой пример */
-  /* backdrop {
+    .hero-backdrop {
     position: fixed;
     display: flex;
     align-items: center;
@@ -589,8 +589,8 @@ height: 44px;
     background-color: rgba(0, 0, 0, 0.2);
     top: 0;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  } */
-  .hero-backdrop {
+  } 
+  /* .hero-backdrop {
     position: fixed;
   display: flex;
   align-items: center;
@@ -602,7 +602,7 @@ height: 44px;
     background-color: rgba(0,0,0,0.2);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  }
+  } */
   .hero-backdrop is-hidde{
     opacity: 0;
     pointer-events: none;
@@ -611,26 +611,40 @@ height: 44px;
   .hero-backdrop is-hidde .modal{
    transform: scale(2);
   }
-  .hero-modal {
+  /* .hero-modal {
     position: relative;
-
-  
     width: 528px;
     height: 581px;
     transform: scale(1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border-radius: 4px;
-    background: var(--logo-footer-color);
+    background: var(--logo-footer-color); */
     /* top: 50%;
         left: 50%;
         transform: translate(-50%, -50%) scale(1); */
   
-  }
-   .modal-icon{
-     width: 11px;
-    height: 11px;
-  } 
-  .close-button{
+ .hero-modal{
+    width: 528px;
+    min-height: 581px;
+    background-color: #ffffff;
+    
+    position: relative;
+    transform: scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
+  /* .hero-modal{
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  top: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  } */
+  
+  /* .close-button{
     position: absolute;
     display: flex;
     align-items: center;
@@ -642,10 +656,9 @@ height: 44px;
     height: 30px;
     border: 1px solid var(--logo-nav-color);
     box-sizing: border-box;
-  }
-  /* .close-btn {
+  } */
+  .close-button {
     position: absolute;
-  
     display: flex;
     align-items: center;
     justify-content: center;
@@ -656,8 +669,8 @@ height: 44px;
     border-radius: 50%;
     width: 30px;
     height: 30px;
-    border: 1px solid #000000; */
- 
+    border: 1px solid #000000; 
+  }
  /* .works{
    background-color: var(--logo-nav-color);
  } */

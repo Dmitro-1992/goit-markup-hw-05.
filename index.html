@@ -53,7 +53,7 @@
     <section class="hero works">
         <div class="container">
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-         <button class="button" type="button">Заказать услугу</button>
+         <button class="button" type="button" data-modal-open>Заказать услугу</button>
     </div>
 
     </section>
@@ -364,7 +364,7 @@
     <li class="footer-list">
     <a class="contacts" href="">
     <svg class="footer-icon">
-    <use href="./images/sprite.svg#icon-instagram1" width="20px" height="20px"></use>
+        <use href="./images/sprite.svg#icon-instagram1" width="20px" height="20px"></use>
     </svg>
     </a>
   </li>
@@ -394,9 +394,13 @@
 </div>
     </footer>
    </main>
-   <div class="hero-backdrop">
+   <div class="hero-backdrop is-hidden" data-modal>
     <div class="hero-modal">
-    <button class="button" type="button">Заказать услугу</button>
+    <button type="button"class="close-button" data-modal-close>
+    <svg class="modal-icon">
+        <use href="./images/sprite.svg#icon-close-black"></use>
+   </svg>
+</button>
     </div>
    </div>
   </body>
